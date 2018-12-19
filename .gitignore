@@ -1,0 +1,4 @@
+
+src/environments/*.*.ts
+node_modules
+dist

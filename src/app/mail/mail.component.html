@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row no-gutters">
+    <div class="mail-container col-lg">
+      <div class="left">
+        <ul>
+          <li *ngIf="users$ | async">{{users$}}</li>
+          <button class="btn success-btn" (click)="sendMail($event)" >Send mail? :-)</button>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
