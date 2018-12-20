@@ -1,1 +1,1 @@
-web: node ./dist/elements/story-tipper.js
+web: yarn build-elements
