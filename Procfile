@@ -1,1 +1,1 @@
-web: node ./dist/elements/storytipper.js
+web: node dist/elements/storytipper.js
