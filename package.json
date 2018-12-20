@@ -10,8 +10,8 @@
     "ng": "ng",
     "start": "node ./dist/elements/story-tipper.js",
     "build": "ng build",
-    "postinstall": "yarn build-elements",
-    "build-elements": "ng build --prod && node build-script.js",
+    "postinstall": "yarn build:elements",
+    "build:elements": "ng build --prod && node build-script.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -29,7 +29,8 @@
     "@angular/platform-browser-dynamic": "~7.1.4",
     "@angular/router": "~7.1.4",
     "core-js": "^2.5.4",
-    "document-register-element": "^1.7.2",
+    "document-register-element": "^1.8.1",
+    "http-server": "^0.11.1",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"

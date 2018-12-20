@@ -9,7 +9,7 @@ const concat = require('concat');
         './dist/story-tipper/scripts.js',
     ]
 
-    await fs.ensureDir('dist/elements');
-    await concat(files, './dist/elements/story-tipper.js')
+    await fs.ensureDir('elements');
+    await concat(files, 'elements/story-tipper.js')
     console.log('Done concatinating')
 })();
