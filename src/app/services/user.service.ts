@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment.dev';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { IUsers } from '../models/users.model';
 
 @Injectable({
   providedIn: 'root'
@@ -15,8 +17,8 @@ export class UserService {
   /**
    * @param params is page hits feed
    */
-  getUsers(params: {}) {
-    return this.http.get(`${environment.storyApiUrl}/users`, { params })
+  getUsers(params: {}): Observable<IUsers> {
+    return this.http.get<IUsers>(`${environment.storyApiUrl}/users`, { params })
   }
 
 }

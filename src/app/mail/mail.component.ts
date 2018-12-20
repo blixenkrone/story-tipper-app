@@ -11,7 +11,7 @@ import { IUsers } from '../models/users.model';
   encapsulation: ViewEncapsulation.ShadowDom
 })
 export class MailComponent implements OnInit {
-  private users$: Observable<IUsers>;
+  users$: Observable<IUsers>;
 
   constructor(private usrSrv: UserService) { }
 
