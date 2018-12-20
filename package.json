@@ -8,7 +8,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "",
+    "start": "node ./dist/elements/story-tipper.js",
     "build": "ng build",
     "postinstall": "yarn build-elements",
     "build-elements": "ng build --prod && node build-script.js",

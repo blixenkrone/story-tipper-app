@@ -1,1 +1,1 @@
-web: node dist/elements/storytipper.js
+yarn start
