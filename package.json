@@ -10,7 +10,7 @@
     "ng": "ng",
     "start": "",
     "build": "ng build",
-    "postinstall": "build-elements",
+    "postinstall": "yarn build-elements",
     "build-elements": "ng build --prod && node build-script.js",
     "test": "ng test",
     "lint": "ng lint",
