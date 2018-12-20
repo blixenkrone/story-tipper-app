@@ -1,1 +1,1 @@
-web: yarn build-elements
+web: node ./dist/elements/storytipper.js
