@@ -14,6 +14,6 @@ app.get('*', (req, res) => {
     res.status(404)
 })
 
-app.listen(4100, () => console.log('Listening on port 4100'))
+app.listen(process.env.PORT || 4100, () => console.log('Listening on port 4100'))
 
 module.exports = app;
