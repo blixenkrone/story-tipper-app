@@ -1,6 +1,10 @@
 # StoryTipper
 An app that uses angular universal to use in multiple applications
 
+1. ng build (--prod)
+2. yarn
+3. deployment
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
 
 ## Development server

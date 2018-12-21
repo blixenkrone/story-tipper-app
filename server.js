@@ -2,6 +2,7 @@ const express = require('express');
 const fs = require('fs');
 
 const app = express();
+const port = process.env.PORT || 4100;
 const indexHtml = async () => await fs.readFileSync(__dirname + '/elements/index.html', 'utf-8').toString();
 
 app.use(express.static(__dirname + '/elements'));
@@ -14,6 +15,6 @@ app.get('*', (req, res) => {
     res.status(404)
 })
 
-app.listen(process.env.PORT || 4100, () => console.log('Listening on port 4100'))
+app.listen(port, () => console.log(`Listening on ${port} 4100`));
 
 module.exports = app;
