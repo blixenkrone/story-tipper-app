@@ -8,9 +8,9 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "node ./dist/elements/story-tipper.js",
+    "start": "node ./dist/out-tsc/server.js",
     "build": "ng build",
-    "postinstall": "yarn build:elements",
+    "heroku-postinstall": "yarn build:elements",
     "build:elements": "ng build --prod && node build-script.js",
     "test": "ng test",
     "lint": "ng lint",
