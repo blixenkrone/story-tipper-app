@@ -10,8 +10,8 @@
     "ng": "ng",
     "start": "node ./dist/out-tsc/server.js",
     "build": "ng build",
-    "heroku-postinstall": "yarn build:elements",
-    "build:elements": "ng build --prod && node build-script.js",
+    "postinstall": "yarn build:elements",
+    "build:elements": "ng build --prod && tsc && node build-script.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
