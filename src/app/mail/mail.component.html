@@ -4,7 +4,8 @@
       <div class="left">
         <ul>
           <li *ngIf="(users$ | async)">{{users$}}</li>
-          <button class="btn success-btn" (click)="sendMail($event)" >Send a little mail? :-)</button>
+          <button class="btn success-btn" (click)="sendMail($event)">Send a little mail? :-)</button>
+          <p>Got this?</p>
         </ul>
       </div>
     </div>

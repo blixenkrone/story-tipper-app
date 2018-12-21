@@ -19,11 +19,9 @@ import { CommonModule } from '@angular/common';
 })
 export class AppModule {
   constructor(private injector: Injector) {
-
     // const array of [@Component: {}, name: string]
     // forof const [component, name] of array
     // do the createCustomElement func below
-
     const el = createCustomElement(MailComponent, { injector: this.injector });
     customElements.define('story-tipper', el);
   }
