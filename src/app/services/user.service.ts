@@ -18,7 +18,7 @@ export class UserService {
    * @param params is page hits feed
    */
   getUsers(params: {}): Observable<IUsers> {
-    return this.http.get<IUsers>(`${environment.storyApiUrl}/users`, { params })
+    return this.http.get<IUsers>(`${environment.microApiUrl}/users`, { params })
   }
 
 }

@@ -13,7 +13,7 @@ export class MailService {
   constructor(private http: HttpClient) { }
 
   private getToken = () => {
-    return this.http.get(`${environment.storyApiUrl}`)
+    return this.http.get(`${environment.microApiUrl}`)
       .pipe(catchError(err => of(err)))
   }
 

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "node ./dist/out-tsc/server.js",
+    "start": "node server.js",
     "build": "ng build",
     "postinstall": "yarn build:elements",
     "build:elements": "ng build --prod && tsc && node build-script.js",
